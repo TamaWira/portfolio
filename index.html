@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/8dc8310c19.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/spacing.css" />
+    <link rel="stylesheet" href="assets/css/display.css" />
+    <link rel="stylesheet" href="assets/css/ui.css" />
+  </head>
+  <body>
+    <header>
+      <!-- || NAVBAR -->
+      <nav>
+        <div class="flex align-center justify-space-between container my-1">
+          <h3 class="heading-3">BAYU WIRATAMA</h3>
+          <div class="dropdown">
+            <i
+              class="dropbtn mobile fa-solid fa-bars"
+              onclick="myFunction()"
+            ></i>
+            <div class="tablet">
+              <ul class="gap-1 body-2">
+                <a href="#projects"><li>Work</li></a>
+                <a href="#about"><li>About</li></a>
+                <a href="#contact"><li>Contact</li></a>
+              </ul>
+            </div>
+            <div id="myDropdown" class="dropdown-content">
+              <ul class="body-2" style="flex-direction: column">
+                <a href="#projects"><li>Work</li></a>
+                <a href="#about"><li>About</li></a>
+                <a href="#contact"><li>Contact</li></a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- || HERO -->
+      <section id="hero" class="my-2">
+        <div class="container row align-center gap-2">
+          <div class="col-6">
+            <h1 class="heading-1">hi, i am Bayu Wiratama.</h1>
+            <p class="body mb-1">
+              An Indonesia based front-end developer passionate about building
+              accessible and user friendly websites.
+            </p>
+            <div class="flex gap-1 align-center">
+              <a href="#contact" style="height: 100%">
+                <button
+                  class="btn btn-circle bg-primary"
+                  style="padding-inline: 2rem; padding-block: 1.2rem"
+                >
+                  CONTACT ME
+                </button>
+              </a>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/iputubayuadhyawiratama/"
+              >
+                <button class="btn btn-circle bg-gray">
+                  <img src="assets/images/bxl-linkedin.svg" alt="" />
+                </button>
+              </a>
+              <a target="_blank" href="https://github.com/TamaWira">
+                <button class="btn btn-circle bg-gray">
+                  <img src="assets/images/bxl-github.svg" alt="" />
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="flex justify-center align-center my-1">
+              <img
+                class="border-radius"
+                src="assets/images/profile pic.jpeg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+
+      <!-- || PROJECTS -->
+      <section id="projects" class="my-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <h3 class="heading-2">FEATURED PROJECTS</h3>
+              <p class="body">
+                Here are some of the selected projects that showcase my passion
+                for front-end development.
+              </p>
+            </div>
+          </div>
+
+          <!-- Project Item -->
+          <div class="row gap-2 my-2">
+            <aside class="col-6">
+              <div
+                class="bg-gray border-radius p-1 flex align-center"
+                style="height: 100%"
+              >
+                <img
+                  class="border-radius"
+                  src="assets/images/kaboor.png"
+                  alt=""
+                />
+              </div>
+            </aside>
+            <article class="col-6 py-2">
+              <h3 class="heading-4">
+                Kaboor: Flight E-Ticketing Web Application
+              </h3>
+              <p class="my-1 body">
+                Collaborated with different software teams including Backend,
+                UI/UX, PM, and QA to deliver a web application for flight
+                booking platform. <br />
+                <br />
+
+                Utilized React, Redux, and Material UI to build a fully
+                responsive and user friendly website.
+              </p>
+              <div class="my-1">
+                <p class="mb-1 body bold">PROJECT INFO</p>
+                <hr />
+                <div class="flex justify-space-between my-1">
+                  <p class="body">Year</p>
+                  <p class="body">2024</p>
+                </div>
+                <hr />
+                <div class="flex justify-space-between my-1">
+                  <p class="body">Role</p>
+                  <p class="body">Front-end Developer</p>
+                </div>
+              </div>
+              <div class="flex gap-1">
+                <a
+                  target="_blank"
+                  href="https://kaboor-dev.netlify.app/"
+                  class="btn btn-bottom-outline primary"
+                >
+                  LIVE DEMO
+                </a>
+                <a
+                  target="_blank"
+                  href="https://github.com/Synrgy-Kaboor/full-stack-web"
+                  class="btn btn-bottom-outline primary"
+                >
+                  SEE ON GITHUB
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Project Item -->
+          <div class="row gap-2 my-2">
+            <aside class="col-6">
+              <div
+                class="bg-gray border-radius p-1 flex align-center"
+                style="height: 100%"
+              >
+                <img
+                  class="border-radius"
+                  src="assets/images/Braille.png"
+                  alt=""
+                />
+              </div>
+            </aside>
+            <article class="col-6 py-2">
+              <h3 class="heading-4">Braille Translator Web Application</h3>
+              <p class="my-1 body">
+                Delivered a web application that's able to translate Braille
+                letters in an image to alphabet letters using Deep Learning to
+                help people read Braille letters. Utilized Python, Tensorflow,
+                and YOLO Computer Vision model to detect and translate Braille
+                into alphabet letters.
+              </p>
+              <div class="my-1">
+                <p class="mb-1 body bold">PROJECT INFO</p>
+                <hr />
+                <div class="flex justify-space-between my-1">
+                  <p class="body">Year</p>
+                  <p class="body">2023</p>
+                </div>
+                <hr />
+                <div class="flex justify-space-between my-1">
+                  <p class="body">Role</p>
+                  <p class="body">Computer Vision Engineer</p>
+                </div>
+              </div>
+              <div class="flex gap-1">
+                <a
+                  target="_blank"
+                  href="https://github.com/TamaWira/Braille-Translator"
+                  class="btn btn-bottom-outline primary"
+                >
+                  SEE ON GITHUB
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Project Item -->
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- || ABOUT ME -->
+      <section id="about" class="my-2">
+        <div class="container row gap-2">
+          <div class="col-6">
+            <h3 class="heading-2">ABOUT ME</h3>
+          </div>
+          <div class="col-6">
+            <h4 class="heading-4">
+              I am a front-end developer based in Indonesia. Has Information
+              Technology background.
+            </h4>
+            <p class="body py-1">
+              I am a front-end developer based in Indonesia looking for exciting
+              opportunities. Has Information Technology background. Likes to
+              focus on accessibility when developing. Passionate and curious
+              about solving problems. Currently, I'm exploring Reactjs, Webflow
+              and a bit of Designing. While I am not programming, I enjoy
+              playing football, photography and playing Valorant. Learning more
+              to improve skill.
+            </p>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/iputubayuadhyawiratama/"
+            >
+              <button class="mt-2 btn btn-bottom-outline primary">
+                MORE ABOUT ME
+              </button>
+            </a>
+          </div>
+        </div>
+      </section>
+      <hr />
+    </main>
+    <footer class="my-2" id="contact">
+      <div class="container row gap-2">
+        <div class="col-6 flex column justify-space-between">
+          <div>
+            <h3 class="heading-2">LET'S CONNECT</h3>
+            <p class="my-1 body">
+              Say hello at
+              <span class="btn-bottom-outline"
+                >bayuadhyawiratama@gmail.com</span
+              >
+            </p>
+            <p class="body">
+              For more info, here's my
+              <a
+                target="_blank"
+                href="https://drive.google.com/file/d/1UaVopi78iTwh_Bzv8lhNPBH-nyPwe_B7/view?usp=sharing"
+              >
+                <span class="btn-bottom-outline">resume</span>
+              </a>
+            </p>
+          </div>
+          <p class="laptop body">© 2024 Bayu Wiratama</p>
+        </div>
+        <div class="col-6">
+          <form action="mailto:bayuadhyawiratama@gmail.com" method="post">
+            <div class="my-1">
+              <p class="body mb-1">Name</p>
+              <input
+                type="text"
+                name="fullname"
+                class="fullwidth p-1 bg-gray"
+              />
+            </div>
+            <div class="my-1">
+              <p class="body mb-1">Email</p>
+              <input type="text" name="email" class="fullwidth p-1 bg-gray" />
+            </div>
+            <div class="my-1">
+              <p class="body mb-1">Subject</p>
+              <input type="text" name="subject" class="fullwidth p-1 bg-gray" />
+            </div>
+            <div class="my-1">
+              <p class="body mb-1">Message</p>
+              <textarea
+                cols="20"
+                rows="10"
+                name="message"
+                class="fullwidth p-1 bg-gray"
+              ></textarea>
+            </div>
+            <button
+              class="btn btn-circle bg-primary body"
+              type="submit"
+              style="padding-inline: 2rem"
+            >
+              SUBMIT
+            </button>
+          </form>
+        </div>
+        <p class="mobile mt-3 body">© 2024 Bayu Wiratama</p>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+.border {
+  border: 1px solid;
+}
+
+.border-radius {
+  border-radius: 3px;
+}
+
+/* || TYPOGRAPHY */
+
+.heading-1,
+.heading-2,
+.heading-3 {
+  font-family: "Bebas Neue";
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+}
+
+.heading-1 {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+.heading-2 {
+  font-size: 2rem;
+}
+
+.heading-3 {
+  font-size: 2rem;
+}
+
+.heading-4 {
+  font-family: Manrope;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.body {
+  font-family: Manrope;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.body-2 {
+  font-family: Inter;
+}
+
+/* || COLOR */
+
+.primary {
+  color: #d3e97a;
+}
+
+.bg-primary {
+  background-color: #d3e97a;
+}
+
+.bg-gray {
+  background-color: #1a1a1a;
+}
+
+/* || BUTTON */
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 1rem;
+}
+
+.btn-circle {
+  border-radius: 999px;
+}
+
+.btn-bottom-outline {
+  background-color: transparent;
+  border-bottom: 2px solid #d3e97a;
+}
+
+/* || DROPDOWN */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  color: black;
+  font-family: Manrope;
+  right: 0;
+  background-color: #f1f1f1;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 1rem;
+  border-radius: 3px;
+}
+
+.show {
+  display: block;
+}
